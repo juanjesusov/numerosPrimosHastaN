@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E88E5"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tTitulo"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_x="-1dp"
+        android:layout_y="18dp"
+        android:fontFamily="sans-serif-black"
+        android:text="EXAMEN E1"
+        android:textAlignment="center"
+        android:textColor="#FDD835"
+        android:textSize="40dp" />
+
+    <EditText
+        android:id="@+id/eN1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="137dp"
+        android:layout_y="127dp"
+        android:fontFamily="sans-serif"
+        android:hint="INGRESA UN NUMERO"
+        android:inputType="number"
+        android:maxLength="3"
+        android:textColor="#000"
+        android:textSize="17dp"
+        android:visibility="visible" />
+
+
+    <!-- ======================================RESULTADOS====================================== -->
+    <TextView
+        android:id="@+id/tResultado"
+        android:layout_width="328dp"
+        android:layout_height="493dp"
+        android:layout_x="16dp"
+        android:layout_y="38dp"
+        android:fontFamily="sans-serif"
+        android:text="Impuestos a pagar:"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="19dp"
+        android:visibility="invisible" />
+
+    <!-- ========================================BOTONES======================================== -->
+
+    <Button
+        android:id="@+id/bAceptar"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_x="24dp"
+        android:layout_y="100dp"
+        android:background="#FDD835"
+        android:onClick="Aceptar"
+        android:text="Aceptar"
+        android:textColor="#000000"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/bLimpiar"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_x="255dp"
+        android:layout_y="549dp"
+        android:background="#FDD835"
+        android:onClick="Limpiar"
+        android:text="Limpiar"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/bSalir"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_x="24dp"
+        android:layout_y="150dp"
+        android:background="#FDD835"
+        android:onClick="Salir"
+        android:text="Salir"
+        android:textColor="#000000"
+        android:textSize="15dp" />
+
+</AbsoluteLayout>
